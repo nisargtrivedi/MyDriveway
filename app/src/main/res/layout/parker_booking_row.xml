@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:elevation="@dimen/_5sdp"
+    android:id="@+id/rlMain"
+    android:layout_margin="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.driveway.Component.RoundCornersImageView
+        android:id="@+id/imgParking"
+        android:src="@drawable/car_img"
+        android:scaleType="fitXY"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp" />
+    <LinearLayout
+        android:layout_marginRight="@dimen/_1sdp"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:gravity="center"
+        android:elevation="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rounded_border_white_right_side"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.driveway.Component.TTextView
+            android:gravity="center|left"
+            android:textSize="@dimen/_9ssp"
+            android:id="@+id/tvStatDate"
+            android:singleLine="true"
+            android:text="24 July 2019 -> 24 July 2019"
+            android:textColor="#4E4E4E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.driveway.Component.TTextView>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.driveway.Component.TTextView
+                android:layout_weight="2"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/_13ssp"
+                android:id="@+id/tvTitle"
+                android:textColor="#EC6004"
+                android:textStyle="bold"
+                android:text="UWA Car Park 3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <com.driveway.Component.TTextView
+                android:layout_weight="1"
+                android:textSize="@dimen/_16ssp"
+                android:id="@+id/tvPrice"
+                android:textColor="#EC6004"
+                android:textStyle="bold"
+                android:text="$0"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center|left"
+            android:textSize="@dimen/_9ssp"
+            android:id="@+id/tvStayTime"
+            android:text="24 July 2019 -> 24 July 2019"
+            android:textColor="#4E4E4E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.driveway.Component.TTextView>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.driveway.Component.TTextView
+                android:id="@+id/tvStatus"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_alignParentLeft="true"
+                android:text="Upcoming"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center|left"
+                android:background="@drawable/round_booking_parker"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_20sdp">
+            </com.driveway.Component.TTextView>
+
+            <ImageView
+                android:id="@+id/btnStar"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/btnRight"
+                android:src="@drawable/drawable_star_orange"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_20sdp"></ImageView>
+
+            <ImageView
+                android:id="@+id/btnRight"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:src="@drawable/drawable_right_right_arrow"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_20sdp"></ImageView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

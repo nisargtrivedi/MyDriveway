@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlone"
+        android:translationZ="@dimen/_10sdp"
+        android:background="@drawable/rounded_border_white_with_small_radius"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/hammer"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:scaleType="center"
+            android:src="@drawable/drawable_left_hammer"
+            android:layout_height="@dimen/_30sdp">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/edtSearch"
+            android:hint="Search"
+            android:imeOptions="actionDone"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:singleLine="true"
+            android:background="@color/white"
+            android:layout_toRightOf="@id/hammer"
+            android:drawablePadding="@dimen/_10sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:drawableRight="@drawable/drawable_right_icon_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+        </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+
+    </RelativeLayout>
+    <ListView
+        android:divider="@color/white"
+        android:layout_margin="@dimen/_10sdp"
+        android:translationZ="@dimen/_10sdp"
+        android:background="@drawable/rounded_border_white_with_small_radius"
+        android:id="@+id/lvLocation"
+        android:layout_below="@id/rlone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <include layout="@layout/activity_maps"></include>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:elevation="@dimen/_10sdp"
+        android:visibility="visible"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:id="@+id/btnMap"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="center"
+        android:background="@drawable/round_white"
+        android:layout_above="@id/btnSwitch"
+        android:src="@drawable/ic_black_location"
+        android:layout_height="@dimen/_30sdp"></androidx.appcompat.widget.AppCompatImageView>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginRight="@dimen/_10sdp"
+        android:id="@+id/btnSwitch"
+        android:layout_width="@dimen/_50sdp"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/btnFilter"
+        android:src="@drawable/ic_switch_display"
+        android:layout_height="@dimen/_43sdp"></androidx.appcompat.widget.AppCompatImageView>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:id="@+id/btnFilter"
+        android:layout_width="@dimen/_50sdp"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/rvCars"
+        android:src="@drawable/ic_parker_filter"
+        android:layout_height="@dimen/_43sdp"></androidx.appcompat.widget.AppCompatImageView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:id="@+id/rvCars"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:translationZ="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    <include layout="@layout/parker_parking_type_filter" android:visibility="gone"></include>
+</RelativeLayout>

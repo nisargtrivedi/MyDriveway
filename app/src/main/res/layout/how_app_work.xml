@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/_45sdp"
+            android:src="@drawable/ic_left"
+            android:scaleType="centerInside"
+            android:id="@+id/back"
+            android:layout_height="@dimen/_25sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <com.driveway.Component.TTextView
+            android:id="@+id/Title"
+            android:layout_toRightOf="@id/back"
+            android:text="@string/how_the_app_works"
+            android:textSize="@dimen/_16ssp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_below="@id/rl"
+        android:id="@+id/myviewpager"
+        android:layout_width="match_parent"
+        android:layout_above="@id/dots_indicator"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_above="@id/btnSkip"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        app:dotsColor="@color/switch_background"
+        app:dotsCornerRadius="8dp"
+        android:layout_gravity="center"
+        app:dotsSize="10dp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="2.5"
+        app:selectedDotColor="#000000"
+        app:progressMode="true"
+        />
+
+    <TextView
+        android:fontFamily="@font/m_medium"
+        android:id="@+id/btnSkip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="SKIP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:background="@drawable/rounded_border"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp" />
+
+</RelativeLayout>

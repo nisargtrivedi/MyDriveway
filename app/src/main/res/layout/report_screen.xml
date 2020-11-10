@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_marginBottom="@dimen/_20sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_20sdp"
+            android:src="@drawable/ic_left"
+            android:id="@+id/back"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <com.driveway.Component.TTextView
+            android:paddingLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@id/back"
+            android:text="Report"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_report"
+        android:layout_height="@dimen/_150sdp"></androidx.appcompat.widget.AppCompatImageView>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:background="@drawable/rounded_border_report_background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvReportResident"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:paddingRight="@dimen/_7sdp"
+            android:drawableRight="@drawable/drawable_arrow_down"
+            android:text="Report a Resident"
+            android:paddingLeft="@dimen/_10sdp"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"></com.driveway.Component.TTextView>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llResident"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.driveway.Component.EEditText
+                android:singleLine="true"
+                android:id="@+id/edtResident"
+                android:hint="Type here.."
+                android:ems="20"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:textStyle="normal"
+                android:paddingTop="@dimen/_10sdp"
+                android:gravity="top"
+                android:textColorHint="#A29C9C"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="#A29C9C"
+                android:paddingLeft="@dimen/_6sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/rounded_border_white_with_small_radius"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"></com.driveway.Component.EEditText>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/rounded_border_report_background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvReportIncident"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:paddingRight="@dimen/_7sdp"
+            android:drawableRight="@drawable/drawable_arrow_down"
+            android:text="Report an Incident"
+            android:paddingLeft="@dimen/_10sdp"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"></com.driveway.Component.TTextView>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llIncident"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.driveway.Component.EEditText
+                android:singleLine="true"
+                android:id="@+id/edtIncident"
+                android:hint="Type here.."
+                android:ems="20"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:textStyle="normal"
+                android:paddingTop="@dimen/_10sdp"
+                android:gravity="top"
+                android:textColorHint="#A29C9C"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="#A29C9C"
+                android:paddingLeft="@dimen/_6sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/rounded_border_white_with_small_radius"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"></com.driveway.Component.EEditText>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.driveway.Component.TTextView
+        android:id="@+id/btnSubmit"
+        android:gravity="center"
+        android:text="SUBMIT"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:background="@drawable/rounded_border"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.driveway.Component.TTextView
+        android:fontFamily="@font/ps_regular"
+        android:visibility="invisible"
+        android:id="@+id/tvVisible"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:translationZ="10dp"
+        android:layout_marginBottom="-60dp"
+        android:textSize="@dimen/_13ssp"
+        android:gravity="center"
+        android:background="@drawable/rounded_border_white_with_small_radius"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="@color/button_color"
+        android:text="Default"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_40sdp"></com.driveway.Component.TTextView>
+
+    <com.driveway.Component.RoundCornersImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/car_img"
+        android:id="@+id/imgParkingSpace"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"></com.driveway.Component.RoundCornersImageView>
+
+
+    <RelativeLayout
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/rounded_border_white_with_small_radius"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.driveway.Component.TTextView
+            android:layout_toLeftOf="@id/tvEdit"
+            android:textSize="@dimen/_13ssp"
+            android:id="@+id/tvModel"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:textColor="#EC6004"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_toLeftOf="@id/tvEdit"
+            android:layout_below="@id/tvModel"
+            android:id="@+id/tvRegistrationNo"
+            android:textColor="#FF333333"
+            android:textStyle="normal"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_12ssp"
+            android:layout_below="@id/tvRegistrationNo"
+            android:id="@+id/tvYear"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/tvDelete"
+            android:textColor="#FF333333"
+            android:textStyle="normal"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/tvEdit"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/drawable_parker_pencil"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp" />
+
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvEditt"
+            android:visibility="invisible"
+            android:text="Edit"
+            android:paddingLeft="@dimen/_4sdp"
+            android:textSize="@dimen/_10ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:drawableLeft="@drawable/drawable_pencil"
+            android:layout_below="@id/tvEdit"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp">
+
+        </com.driveway.Component.TTextView>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/tvDelete"
+            android:paddingLeft="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:gravity="center"
+            android:layout_below="@id/tvEditt"
+            android:layout_alignParentRight="true"
+           android:src="@drawable/drawable_parker_bin"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+    </RelativeLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

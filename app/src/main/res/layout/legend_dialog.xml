@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/rounded_border_white_with_small_radius"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/close"
+        android:scaleType="centerInside"
+        android:layout_margin="@dimen/_7sdp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/close"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"></ImageView>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:id="@+id/ll1"
+        android:layout_below="@id/close"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_below="@id/close"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <ImageView
+                android:src="@drawable/border_button_with_fill_no_radius"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"></ImageView>
+
+            <com.driveway.Component.TTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/close"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:gravity="center|left"
+                android:text="Current date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp">
+
+            </com.driveway.Component.TTextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <ImageView
+                android:src="@drawable/border_button_with_fill_whiteno_radius"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"></ImageView>
+            <com.driveway.Component.TTextView
+                android:textColor="@color/black"
+                android:text="Booking available"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_below="@id/close"
+                android:gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.driveway.Component.TTextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:id="@+id/ll2"
+        android:layout_below="@id/ll1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_below="@id/close"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <ImageView
+                android:src="@drawable/border_button_three"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"></ImageView>
+            <com.driveway.Component.TTextView
+                android:textColor="@color/black"
+                android:text="Past days"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_below="@id/close"
+                android:gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.driveway.Component.TTextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <ImageView
+                android:src="@drawable/border_button_four"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"></ImageView>
+            <com.driveway.Component.TTextView
+                android:textColor="@color/black"
+                android:text="Property booked"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_below="@id/close"
+                android:gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.driveway.Component.TTextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

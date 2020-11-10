@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.driveway.Component.RoundCornersImageView
+        android:id="@+id/imgParkingSpace"
+        android:src="@drawable/car_img"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp" />
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:translationZ="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="-30dp"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/rounded_border_white_with_small_radius"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.driveway.Component.TTextView
+            android:layout_toLeftOf="@id/tvAvailability"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/tvTitle"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:textColor="#EC6004"
+            android:textStyle="bold"
+            android:text="UWA Car Park 3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_toLeftOf="@id/tvEdit"
+            android:layout_below="@id/tvTitle"
+            android:id="@+id/tvAddress"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/owner_dashboard_parking_list_row_text_color"
+            android:textStyle="normal"
+            android:text="UWA Car Park 3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_11ssp"
+            android:layout_below="@id/tvAddress"
+            android:id="@+id/tvPrice"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/tvDelete"
+            android:textColor="@color/profile_page_color"
+            android:textStyle="bold"
+            android:text="$10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvAvailability"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/owner_dashboard_parking_list_row_text_color"
+            android:textStyle="normal"
+            android:text="80% Available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+       <com.driveway.Component.TTextView
+           android:id="@+id/tvEdit"
+           android:text="Edit"
+           android:paddingLeft="@dimen/_4sdp"
+           android:textSize="@dimen/_10ssp"
+           android:gravity="center"
+           android:layout_marginTop="@dimen/_6sdp"
+           android:drawableLeft="@drawable/drawable_pencil"
+           android:layout_below="@id/tvAvailability"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/border_button_with_fill_fragment_three_watch"
+           android:layout_width="@dimen/_50sdp"
+           android:layout_height="@dimen/_20sdp">
+
+       </com.driveway.Component.TTextView>
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvDelete"
+            android:paddingLeft="@dimen/_4sdp"
+            android:text="Delete"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textSize="@dimen/_10ssp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/drawable_bin"
+            android:layout_below="@id/tvEdit"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp">
+
+        </com.driveway.Component.TTextView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/llFilter"
+    android:elevation="@dimen/_10sdp"
+    android:background="@drawable/rounded_border_up_side_white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp">
+
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_20sdp"
+            android:src="@drawable/close"
+            android:scaleType="centerInside"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <com.driveway.Component.TTextView
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/close"
+            android:textColor="@color/button_color"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14ssp"
+            android:text="Choose Filters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <View
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:background="#B2B2B2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"></View>
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:weightSum="5.5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/chkAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@drawable/checkbox_filter"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="All"
+            android:textStyle="normal"
+            android:fontFamily="@font/font_file_name"
+            android:textSize="@dimen/_10ssp"></androidx.appcompat.widget.AppCompatCheckBox>
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/chkOngoing"
+            android:textStyle="normal"
+            android:fontFamily="@font/font_file_name"
+            android:textSize="@dimen/_10ssp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:button="@drawable/checkbox_filter"
+            android:layout_weight="1.5"
+            android:text="Ongoing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatCheckBox>
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/chkUpcoming"
+            android:textStyle="normal"
+            android:fontFamily="@font/font_file_name"
+            android:textSize="@dimen/_10ssp"
+            android:layout_weight="1.5"
+            android:text="Upcoming"
+            android:paddingLeft="@dimen/_5sdp"
+            android:button="@drawable/checkbox_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatCheckBox>
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/chkCompleted"
+            android:textSize="@dimen/_10ssp"
+            android:layout_weight="1.5"
+            android:paddingLeft="@dimen/_5sdp"
+            android:button="@drawable/checkbox_filter"
+            android:text="Completed"
+            android:textStyle="normal"
+            android:fontFamily="@font/font_file_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatCheckBox>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chkCancelled"
+        android:textStyle="normal"
+        android:fontFamily="@font/font_file_name"
+        android:button="@drawable/checkbox_filter"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textSize="@dimen/_10ssp"
+        android:text="Cancelled"
+        android:paddingLeft="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatCheckBox>
+</LinearLayout>
+</LinearLayout>

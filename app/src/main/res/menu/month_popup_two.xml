@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/january"
+        android:title="Jan - Mar"/>
+
+    <item
+        android:id="@+id/february"
+        android:title="Apr-Jun"/>
+
+    <item
+        android:id="@+id/march"
+        android:title="Jul-Sep"/>
+    <item
+        android:id="@+id/april"
+        android:title="Oct-Dec"/>
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:spin="http://schemas.android.com/apk/res-auto">
+<com.driveway.Component.SpinView
+    android:id="@+id/spinner_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    spin:radius="@dimen/_10sdp"
+    spin:length="@dimen/_15sdp"
+    spin:speed="1"
+    spin:corners="0.3"
+    spin:lines="12"
+    spin:width="@dimen/_3sdp"/>
+</RelativeLayout>

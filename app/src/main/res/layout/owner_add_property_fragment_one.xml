@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnNext"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:paddingBottom="@dimen/_10sdp"
+            android:id="@+id/ll_property"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:alignmentMode="alignBounds"
+            android:columnCount="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:rowCount="13"
+            android:useDefaultMargins="true">
+
+
+            <View
+                android:id="@+id/dividor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_row="10"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@color/add_property_dividor_color" />
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/edtSearch"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill_horizontal"
+                android:layout_toRightOf="@id/hammer"
+                android:background="@drawable/rounded_border_white_with_small_radius_add_property"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Address"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/add_property_editext_text_color"
+                android:textSize="@dimen/_13ssp"></androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+            <com.driveway.Component.EEditText
+                android:id="@+id/edtPropertyName"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill_horizontal"
+                android:background="@drawable/rounded_border_white_with_small_radius_add_property"
+                android:hint="Property Name"
+                android:inputType="textCapSentences"
+                android:paddingLeft="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColor="@color/add_property_editext_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal" />
+
+
+
+
+
+            <com.driveway.Component.EEditText
+                android:id="@+id/edtMaxCars"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill_horizontal"
+                android:background="@drawable/rounded_border_white_with_small_radius_add_property"
+                android:hint="Select Max.Cars"
+                android:inputType="number"
+                android:paddingLeft="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textColor="@color/add_property_editext_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal" />
+
+            <com.driveway.Component.EEditText
+                android:id="@+id/edtAboutProperty"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_row="9"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill_horizontal"
+                android:background="@drawable/rounded_border_white_with_small_radius_add_property"
+                android:gravity="top"
+                android:hint="About Property"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLines="5"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:text=""
+                android:textColor="@color/add_property_editext_text_color"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal" />
+            <com.driveway.Component.TTextView
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill_horizontal"
+                android:text="@string/property_name"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="normal" />
+            <com.driveway.Component.TTextView
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill_horizontal"
+                android:text="@string/property_address"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="normal" />
+
+            <com.driveway.Component.TTextView
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="@string/parking_area"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="normal" />
+
+
+            <LinearLayout
+                android:weightSum="5"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_columnSpan="3"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <com.driveway.Component.EEditText
+                    android:id="@+id/edtWidth"
+                    android:layout_weight="2"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/rounded_border_white_with_small_radius_add_property"
+                    android:hint="mm wide"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/add_property_editext_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="normal" />
+
+                <com.driveway.Component.TTextView
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="X"
+                    android:layout_width="0dp"
+                    android:textColor="#4DA66F"
+                    android:textSize="@dimen/_18ssp"></com.driveway.Component.TTextView>
+
+
+                <com.driveway.Component.EEditText
+                    android:layout_weight="2"
+                    android:id="@+id/edtHeight"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/rounded_border_white_with_small_radius_add_property"
+                    android:hint="mm long"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/add_property_editext_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <com.driveway.Component.TTextView
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill_horizontal"
+                android:text="@string/select_max_cars"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="normal" />
+
+
+            <com.driveway.Component.TTextView
+                android:layout_height="wrap_content"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill_horizontal"
+                android:text="@string/about_property"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="normal" />
+
+
+            <com.driveway.Component.TTextView
+                android:id="@+id/parkingtype"
+                android:layout_height="wrap_content"
+                android:layout_row="11"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="left"
+                android:text="@string/parking_type"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="normal" />
+
+            <com.driveway.Component.TTextView
+                android:id="@+id/Driveway"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_row="12"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:background="@drawable/border_button_add_property"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Driveway"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal" />
+
+            <com.driveway.Component.TTextView
+                android:id="@+id/Carport"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_row="12"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:background="@drawable/border_button_add_property"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Carport"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal" />
+
+            <com.driveway.Component.TTextView
+                android:id="@+id/Grass"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_row="12"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:background="@drawable/border_button_add_property"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Grass"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal" />
+
+
+        </GridLayout>
+    </ScrollView>
+
+    <com.driveway.Component.BButton
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_border_up_side"
+        android:drawableRight="@drawable/drawable_arrow_right"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"></com.driveway.Component.BButton>
+</RelativeLayout>
+
+
+

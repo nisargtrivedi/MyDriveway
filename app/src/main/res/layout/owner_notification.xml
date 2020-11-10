@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_20sdp"
+            android:src="@drawable/ic_left"
+            android:id="@+id/back"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <TextView
+            android:fontFamily="@font/m_semibold"
+            android:paddingLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@id/back"
+            android:text="Notifications"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+    </RelativeLayout>
+    <com.driveway.Component.TTextView
+        android:id="@+id/tvMsg"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="@dimen/_13ssp"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:textColor="@color/button_color"
+        android:text="No notification found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.driveway.Component.TTextView>
+   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+       android:id="@+id/pullToRefresh"
+       android:background="@color/white"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/white"
+        android:visibility="visible"
+        android:id="@+id/rvNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

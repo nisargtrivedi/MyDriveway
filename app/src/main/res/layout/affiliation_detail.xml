@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_35sdp"
+            android:src="@drawable/ic_left"
+            android:id="@+id/back"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <com.driveway.Component.TTextView
+            android:layout_toRightOf="@id/back"
+            android:text="Affiliation Detail"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp">
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#605A5A"
+            android:textStyle="bold"
+            android:text="Owner Name:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/ownerName"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="#605A5A"
+            android:textStyle="normal"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/add_property_dividor_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"></TextView>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#605A5A"
+            android:textStyle="bold"
+            android:text="Company Name:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/companyName"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="#605A5A"
+            android:textStyle="normal"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/add_property_dividor_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"></TextView>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#605A5A"
+            android:textStyle="bold"
+            android:text="Email Id:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/emailID"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="#5A62EB"
+            android:textStyle="normal"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/add_property_dividor_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"></TextView>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#605A5A"
+            android:textStyle="bold"
+            android:text="Phone Number:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/phoneNumber"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="#5A62EB"
+            android:textStyle="normal"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/add_property_dividor_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"></TextView>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#605A5A"
+            android:textStyle="bold"
+            android:text="Web Site:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/website"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="#5A62EB"
+            android:textStyle="normal"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/add_property_dividor_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"></TextView>
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

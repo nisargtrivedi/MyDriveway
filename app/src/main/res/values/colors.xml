@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="button_color">#FFEE6104</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="app_back_color">#BF6227</color>
+    <color name="back_color_with_opacity">#73000000</color>
+    <color name="white_with_opacity">#73FFFFFF</color>
+    <color name="white_with_opacity_78">#BFFFFFFF</color>
+
+    <color name="login_screen_signup">#F5690C</color>
+    <color name="female_text_color">#575454</color>
+    <color name="menu_owner">#D964BAAA</color>
+    <color name="border_menu">#FFC1BCBC</color>
+    <color name="user_character_menu">#FF2F4858</color>
+    <color name="user_name_color_menu">#FF575454</color>
+    <color name="switch_color">#2F4858</color>
+    <color name="menu_selected_font_color">#FFEC6004</color>
+    <color name="editext_search">#FF656565</color>
+    <color name="owner_dashboard_parking_list_row_text_color">#363636</color>
+    <color name="floating_button_color">#FF4DA66F</color>
+    <color name="add_property_edit_text">#FFF5F5F5</color>
+    <color name="add_property_text_color">#FC7200</color>
+    <color name="add_property_editext_text_color">#939393</color>
+    <color name="add_property_dividor_color">#B2B2B2</color>
+    <color name="add_property_border">#FF707070</color>
+    <color name="property_color">#343434</color>
+    <color name="max_two_photo_text_color">#939393</color>
+    <color name="selected_property_color">#FF4DA66F</color>
+    <color name="switch_background">#FFD8D8D8</color>
+    <color name="profile_fill_color">#FFFCDFCC</color>
+    <color name="profile_page_color">#5D5D5D</color>
+    <color name="new_material_profile_editextcolor">#676767</color>
+    <color name="edittext_profile_not_focus_color">#505050</color>
+    <color name="owner_fragment_four_font_color">#535353</color>
+    <color name="stay_background_color">#8CC2FAC7</color>
+
+
+<!--    CalenderColor-->
+    <color name="nextMonthDayColor">#1F000000</color>
+
+    <color name="booking_row_time_color">#6E6E6E</color>
+    <color name="booking_row_booking_day_color">#4E4E4E</color>
+    <color name="booking_row_username">#3C3C3C</color>
+    <color name="location_dividor">#D5D5D5</color>
+
+
+    <color name="day_disabled_background_color">#F1F5F8</color>
+    <color name="day_disabled_text_color">#DEDEDE</color>
+    <color name="selected_day_background">#03A7E9</color>
+    <color name="current_day_of_month">#03A7E9</color>
+
+
+    <color name="add_card_">#2664BAAA</color>
+    <color name="location_color">#9B9B9B</color>
+    <color name="booking_email_edit_text_color">#E5E5E5</color>
+    <color name="select_extend">#344857</color>
+
+    <color name="thumb_default">#f44336</color>
+    <color name="thumb_ripple_color">#757575</color>
+
+
+    <color name="rsbColorSeekBarDefault">#c3c3c3</color>
+    <color name="rsbColorThumbPressed">#FFE7E7E7</color>
+    <color name="rsbColorThumbDefault">#FFFFFF</color>
+    <color name="rsbColorThumbBorder">#FFD7D7D7</color>
+</resources>

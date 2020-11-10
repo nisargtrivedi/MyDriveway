@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/llMain"
+    android:layout_width="@dimen/_80sdp"
+    android:layout_height="wrap_content">
+
+    <com.driveway.Component.TTextView
+        android:layout_gravity="center"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:background="@drawable/round_character_fill_profile"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:id="@+id/UserCharacter"
+        android:textColor="@color/button_color"
+        android:text="J"
+        android:layout_width="@dimen/_38sdp"
+        android:layout_height="@dimen/_38sdp" />
+    <com.driveway.Component.TTextView
+        android:id="@+id/UserName"
+        android:textColor="@color/black"
+        android:text="john"
+        android:textSize="@dimen/_11ssp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+</LinearLayout>

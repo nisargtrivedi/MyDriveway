@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/rlMain"
+    android:padding="@dimen/_10sdp"
+    android:elevation="@dimen/_10sdp"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/rounded_border_white_with_small_radius"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.driveway.Component.TTextView
+        android:id="@+id/BookingDay"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:textColor="@color/booking_row_booking_day_color"
+        android:gravity="center|left"
+        android:textSize="@dimen/_9ssp"
+        android:text="1 oct 2019 -> 1 oct 2019"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/BookingDay"
+        android:id="@+id/rlBookingUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.TTextView
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:background="@drawable/round_character_fill_profile"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/UserCharacter"
+            android:textColor="@color/button_color"
+            android:text="J"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp" />
+        <com.driveway.Component.TTextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/UserName"
+            android:text="John Owner"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toLeftOf="@id/next"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/UserCharacter"
+            android:textColor="@color/booking_row_username"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.driveway.Component.TTextView
+            android:textColor="@color/booking_row_time_color"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="02:15 PM ---- 02:15 PM"
+            android:layout_toLeftOf="@id/next"
+            android:id="@+id/BookingTime"
+            android:textSize="@dimen/_9ssp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toRightOf="@id/UserCharacter"
+            android:layout_below="@id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/next"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/drawable_right_red"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+
+    </RelativeLayout>
+    <com.driveway.Component.TTextView
+        android:id="@+id/tvCount"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/white"
+        android:padding="@dimen/_3sdp"
+        android:text="10"
+        android:gravity="center"
+        android:background="@drawable/border_button_with_fill_fragment_three"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rlBookingUser"
+        android:drawableLeft="@drawable/drawable_message"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+</RelativeLayout>

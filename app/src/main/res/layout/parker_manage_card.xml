@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_30sdp"
+            android:src="@drawable/ic_left"
+            android:scaleType="fitCenter"
+            android:id="@+id/back"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <com.driveway.Component.TTextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@id/back"
+            android:text="Manage Card"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_below="@id/header"
+        android:layout_centerInParent="true"
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_cards"
+        android:layout_height="@dimen/_150sdp"></androidx.appcompat.widget.AppCompatImageView>
+
+            <ListView
+                android:layout_below="@id/header"
+                android:layout_above="@id/btnAddCard"
+                android:divider="@color/white"
+                android:id="@+id/lvCards"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+    <com.driveway.Component.TTextView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:id="@+id/btnAddCard"
+        android:text="ADD NEW CARD"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/_3sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingLeft="@dimen/_30sdp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/drawable_left_card"
+        android:background="@drawable/rounded_border"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"></com.driveway.Component.TTextView>
+
+</RelativeLayout>

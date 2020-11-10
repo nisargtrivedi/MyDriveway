@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_screen_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_color_with_opacity"
+        android:orientation="vertical">
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_12sdp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:fitsSystemWindows="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.driveway.Component.EEditText
+                    android:background="@drawable/edit_text_bg_with_transparent"
+                    android:id="@+id/edtFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:nextFocusForward="@id/edtLastName"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:hint="First Name"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:inputType="textCapSentences|textPersonName"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_7sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+                <com.driveway.Component.EEditText
+                    android:background="@drawable/edit_text_bg_with_transparent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:id="@+id/edtLastName"
+                    android:nextFocusForward="@id/edtDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:hint="Last Name"
+                    android:inputType="textCapSentences|textPersonName"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_7sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/ll_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_one"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:fitsSystemWindows="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.driveway.Component.EEditText
+                    android:background="@drawable/edit_text_bg_with_transparent"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:nextFocusForward="@id/edtPostalcode"
+                    android:id="@+id/edtDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:hint="Date of Birth"
+                    android:inputType="textCapSentences|textPersonName"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_7sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+                <com.driveway.Component.EEditText
+                    android:background="@drawable/edit_text_bg_with_transparent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:id="@+id/edtPostalcode"
+                    android:nextFocusForward="@id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:hint="Postcode"
+                    android:inputType="textPostalAddress"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_7sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/ll_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_two"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:fitsSystemWindows="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.driveway.Component.TTextView
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:gravity="left|center"
+                    android:text="Gender"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <com.driveway.Component.TTextView
+                    android:id="@+id/tvMale"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="center"
+                    android:text="Male"
+                    android:background="@drawable/rounded_border"
+                    android:textStyle="normal"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp" />
+                <com.driveway.Component.TTextView
+                    android:id="@+id/tvFemale"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:textColor="@color/female_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="center"
+                    android:text="Female"
+                    android:background="@drawable/rounded_border_white"
+                    android:textStyle="normal"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp" />
+                <com.driveway.Component.TTextView
+                    android:id="@+id/tvOther"
+                    android:layout_weight="1"
+                    android:textColor="@color/female_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="center"
+                    android:text="Other"
+                    android:background="@drawable/rounded_border_white"
+                    android:textStyle="normal"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_four"
+                android:layout_below="@id/ll_three"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.driveway.Component.EEditText
+                    android:background="@drawable/edit_text_bg_with_transparent"
+                    android:id="@+id/edtEmail"
+                    android:hint="Email"
+                    android:nextFocusForward="@id/edtPassword"
+                    android:backgroundTint="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:paddingRight="@dimen/_7sdp"
+                    android:drawableRight="@drawable/drawable_right_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    app:passwordToggleEnabled="true"
+                    android:hint="Password"
+                    app:hintEnabled="false"
+                    app:passwordToggleTint="@color/app_back_color"
+                    android:layout_height="wrap_content">
+
+                <com.driveway.Component.EEditText
+                    android:background="@drawable/edit_text_bg_with_transparent"
+                    android:id="@+id/edtPassword"
+                    android:hint="Password"
+                    android:nextFocusForward="@id/edtConfirmPassword"
+                    android:backgroundTint="@color/white"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:paddingRight="@dimen/_7sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Confirm Password"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/app_back_color"
+                    android:layout_height="wrap_content">
+
+                <com.driveway.Component.EEditText
+                    android:background="@drawable/edit_text_bg_with_transparent"
+                    android:id="@+id/edtConfirmPassword"
+                    android:hint="Confirm Password"
+                    android:backgroundTint="@color/white"
+                    android:inputType="textPassword"
+                    android:nextFocusForward="@id/btnSignUp"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:paddingRight="@dimen/_7sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:textSize="@dimen/_10ssp"
+                        android:fontFamily="@font/ps_regular"
+                        android:id="@+id/chkTerms"
+                        android:checked="false"
+                        android:textColor="@color/white"
+                        android:buttonTint="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </CheckBox>
+                    <com.driveway.Component.TTextView
+                        android:textColorLink="@color/white"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/chkTerms"
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+                    <com.driveway.Component.TTextView
+                        android:textColorLink="@color/white"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/tv"
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <com.driveway.Component.TTextView
+                android:layout_below="@id/ll_four"
+                android:id="@+id/btnSignUp"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:background="@drawable/rounded_border"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp" />
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/btnSignUp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.driveway.Component.TTextView
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"
+                    android:text="@string/already_have_an_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.driveway.Component.TTextView
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:textStyle="bold"
+                    android:id="@+id/linkSignIn"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/login_screen_signup"
+                    android:text="@string/sign_in_with_underline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

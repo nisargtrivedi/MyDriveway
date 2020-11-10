@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "245181704981",
+    "firebase_url": "https://drivewaychat-9aac4.firebaseio.com",
+    "project_id": "drivewaychat-9aac4",
+    "storage_bucket": "drivewaychat-9aac4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245181704981:android:3aff41b6d93073222fd71c",
+        "android_client_info": {
+          "package_name": "com.driveway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245181704981-dd77vu8p1o728e8sm2udq4sc5rpl2jkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.driveway",
+            "certificate_hash": "7eb8c142a1e85056792c0ba9ff94b87debd71596"
+          }
+        },
+        {
+          "client_id": "245181704981-03jj2t2g41d8striomtbqr26gd9ri5qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVnYj7GUEMiqgeS3f6P43LT9Z0PDBGmCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245181704981-03jj2t2g41d8striomtbqr26gd9ri5qv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "245181704981-349m7g48q9o9o576lsevdmjepgjhv4hg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vovance.DriveWay"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

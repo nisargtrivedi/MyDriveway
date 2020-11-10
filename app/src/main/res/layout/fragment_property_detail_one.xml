@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:background="@drawable/border_button_with_fill_fragment_three_watch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.driveway.Component.TTextView
+            android:layout_width="0dp"
+            android:id="@+id/PropertyTitle"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text=""
+            android:textColor="@color/button_color"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"></com.driveway.Component.TTextView>
+
+        <com.driveway.Component.TTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Parking Size"
+            android:textColor="#FF909090"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"></com.driveway.Component.TTextView>
+    </LinearLayout>
+    <LinearLayout
+        android:minHeight="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.driveway.Component.TTextView
+            android:layout_width="0dp"
+            android:drawableLeft="@drawable/drawable_maps"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text=""
+            android:ems="20"
+            android:ellipsize="marquee"
+            android:drawablePadding="@dimen/_3sdp"
+            android:id="@+id/PropertyAddress"
+            android:textColor="#FF0F0E0E"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="normal"></com.driveway.Component.TTextView>
+
+        <com.driveway.Component.TTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text=""
+            android:id="@+id/PropertySize"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="normal"></com.driveway.Component.TTextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="horizontal">
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/PropertyAvailability"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text=""
+            android:textColor="#FF0F0E0E"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="normal"></com.driveway.Component.TTextView>
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/parkingtype"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center|left"
+            android:drawableLeft="@drawable/drawable_parked_car"
+            android:text=""
+            android:textColor="#FF00AC8C"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"></com.driveway.Component.TTextView>
+    </LinearLayout>
+    </LinearLayout>
+    <com.driveway.Component.TTextView
+        android:text="About Property"
+        android:textStyle="bold"
+        android:textSize="@dimen/_11ssp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:textColor="@color/button_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    <com.driveway.Component.TTextView
+        android:id="@+id/tvAboutProperty"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,"
+        android:textSize="@dimen/_10ssp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:textColor="#FF696969"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp">
+        <com.driveway.Component.TTextView
+            android:text="Booked By"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@color/button_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvShowMore"
+            android:text="Show More"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/_4sdp"
+            android:textStyle="normal"
+            android:gravity="center|right"
+            android:drawableLeft="@drawable/drawable_propert_details_eye"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="#FF575757"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"></com.driveway.Component.TTextView>
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/_8sdp"
+        android:id="@+id/rvUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <com.driveway.Component.TTextView
+        android:visibility="gone"
+        android:id="@+id/tvMsg"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/button_color"
+        android:text="No booking users found."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+
+
+</LinearLayout>
+</RelativeLayout>
+    </ScrollView>

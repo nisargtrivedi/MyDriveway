@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_20sdp"
+            android:src="@drawable/drawable_close_btn"
+            android:scaleType="centerInside"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <com.driveway.Component.TTextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/close"
+            android:textColor="@color/button_color"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14ssp"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="QPark recommends that you follow these pricing guidelines:XXXXXXXXXXXXXX"
+        android:fontFamily="@font/ps_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+</LinearLayout>

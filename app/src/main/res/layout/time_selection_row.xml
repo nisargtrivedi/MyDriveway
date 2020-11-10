@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="@dimen/_5sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.driveway.Component.TTextView
+            android:gravity="center|left"
+            android:paddingRight="@dimen/_10sdp"
+            android:id="@+id/Time"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="10 AM - 6 AM"
+            android:drawableLeft="@drawable/drawable_left_watch_white"
+            android:textStyle="normal"
+            android:textSize="@dimen/_8ssp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/round_time_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+        </com.driveway.Component.TTextView>
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:id="@+id/imgdelete"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_gravity="center|right"
+            android:src="@drawable/close_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_20sdp"
+
+            android:src="@drawable/ic_left"
+            android:id="@+id/back"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <com.driveway.Component.TTextView
+            android:paddingLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@id/back"
+            android:text="Add Car"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_one"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_below="@id/tv_one"
+        android:background="@drawable/rounded_border_white_with_small_radius_upload_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgUpload"
+            android:src="@drawable/ic_plus"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <com.driveway.Component.TTextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/button_color"
+            android:text="Upload Car Photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </LinearLayout>
+    <com.driveway.Component.RoundCornersImageView
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/imgCar"
+        android:visibility="gone"
+        android:scaleType="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"></com.driveway.Component.RoundCornersImageView>
+
+<!--    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"&ndash;&gt;-->
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/lyGiftList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_weight="8"
+            android:orientation="horizontal"
+            android:background="@drawable/car_drawable"
+            tools:ignore="UselessParent">
+
+            <Spinner
+                android:id="@+id/edtMakeYear"
+                android:layout_margin="3dp"
+                style="@style/SpinnerTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_13ssp"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="-5dp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:text="Make Year *"
+            android:textColor="@color/button_color" />
+    </RelativeLayout>
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_margin="@dimen/_10sdp"-->
+<!--        app:boxBackgroundMode="outline"-->
+<!--        app:boxStrokeColor="@color/button_color"-->
+<!--        app:boxStrokeWidth="0.5dp"-->
+<!--        android:textColorHint="@color/new_material_profile_editextcolor"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <androidx.appcompat.widget.AppCompatAutoCompleteTextView-->
+<!--            android:singleLine="true"-->
+<!--            android:inputType="number"-->
+<!--            android:textStyle="normal"-->
+<!--            android:textSize="@dimen/_13ssp"-->
+<!--            android:id="@+id/edtMakeYear"-->
+<!--            android:textColor="@color/edittext_profile_not_focus_color"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:hint="Make Year *"-->
+<!--            android:layout_height="@dimen/_40sdp"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/button_color"
+        app:boxStrokeWidth="0.5dp"
+        android:textColorHint="@color/new_material_profile_editextcolor"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.EEditText
+            android:singleLine="true"
+            android:inputType="text"
+            android:textStyle="normal"
+            android:textSize="@dimen/_11ssp"
+            android:id="@+id/edtModel"
+            android:textColor="@color/edittext_profile_not_focus_color"
+            android:layout_width="match_parent"
+            android:hint="Model *"
+            android:layout_height="@dimen/_40sdp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/button_color"
+        app:boxStrokeWidth="0.5dp"
+        android:textColorHint="@color/new_material_profile_editextcolor"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.EEditText
+            android:singleLine="true"
+            android:inputType="text"
+            android:textStyle="normal"
+            android:textSize="@dimen/_11ssp"
+            android:id="@+id/edtRegisterNumber"
+            android:textColor="@color/edittext_profile_not_focus_color"
+            android:layout_width="match_parent"
+            android:hint="Registration Number *"
+            android:layout_height="@dimen/_40sdp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkDefault"
+        android:textColor="#171717"
+        android:textStyle="normal"
+        android:fontFamily="@font/ps_regular"
+        android:textSize="@dimen/_10ssp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:button="@drawable/checkbox_filter"
+        android:text="Default Car ?"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp">
+
+    </androidx.appcompat.widget.AppCompatCheckBox>
+
+    <com.driveway.Component.TTextView
+        android:id="@+id/btnSave"
+        android:gravity="center"
+        android:text="SAVE"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/rounded_border"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp" />
+</LinearLayout>

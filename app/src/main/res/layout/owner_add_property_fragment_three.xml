@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_above="@id/btnNext"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.driveway.Component.TTextView
+        android:id="@+id/btnShowCalendar"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/border_button_fragment_three"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_12ssp"
+        android:drawableLeft="@drawable/drawable_left_calendar"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="@dimen/_5sdp"
+        android:text="Show in Calendar"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"></com.driveway.Component.TTextView>
+    <RelativeLayout
+        android:visibility="gone"
+        android:elevation="@dimen/_6sdp"
+        android:padding="@dimen/_6sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/rlCalendar"
+        android:background="@drawable/rounded_border_white_with_small_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.driveway.Component.CustomCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:calendarBackgroundColor="@color/white"
+            app:calendarTitleTextColor="@color/black"
+            app:currentDayOfMonthColor="@color/white"
+            app:dayOfMonthTextColor="@color/white"
+            app:dayOfWeekTextColor="@color/black"
+            app:selectedDayBackgroundColor="@color/button_color"
+            app:titleLayoutBackgroundColor="@color/white"
+            app:weekLayoutBackgroundColor="@color/button_color"/>
+    </RelativeLayout>
+    <View
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/add_property_dividor_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"></View>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <com.driveway.Component.BButton
+            android:id="@+id/btnSunday"
+            android:layout_weight="1"
+            android:text="Sunday"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/time_selector"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"></com.driveway.Component.BButton>
+
+            <com.driveway.Component.TTextView
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:id="@+id/tvSundayChooseTime"
+                android:paddingLeft="@dimen/_10sdp"
+                android:gravity="center|left"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/_5sdp"
+                android:text="Choose Time"
+                android:drawableLeft="@drawable/drawable_left_watch"
+                android:textStyle="normal"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:background="@drawable/border_button_with_fill_fragment_three_watch"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp">
+            </com.driveway.Component.TTextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSunday"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/add_property_dividor_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"></View>
+
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <com.driveway.Component.BButton
+            android:id="@+id/btnMonday"
+            android:layout_weight="1"
+            android:text="Monday"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/time_selector"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"></com.driveway.Component.BButton>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/tvMondayChooseTime"
+            android:paddingLeft="@dimen/_10sdp"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="Choose Time"
+            android:drawableLeft="@drawable/drawable_left_watch"
+            android:textStyle="normal"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+        </com.driveway.Component.TTextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMonday"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/add_property_dividor_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"></View>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <com.driveway.Component.BButton
+            android:id="@+id/btnTuesday"
+            android:layout_weight="1"
+            android:text="Tuesday"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/time_selector"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"></com.driveway.Component.BButton>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/tvTuesdayChooseTime"
+            android:paddingLeft="@dimen/_10sdp"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="Choose Time"
+            android:drawableLeft="@drawable/drawable_left_watch"
+            android:textStyle="normal"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+        </com.driveway.Component.TTextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTuesday"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/add_property_dividor_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"></View>
+
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <com.driveway.Component.BButton
+            android:id="@+id/btnWednesday"
+            android:layout_weight="1"
+            android:text="Wednesday"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/time_selector"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"></com.driveway.Component.BButton>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/tvWednesdayChooseTime"
+            android:paddingLeft="@dimen/_10sdp"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="Choose Time"
+            android:drawableLeft="@drawable/drawable_left_watch"
+            android:textStyle="normal"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+        </com.driveway.Component.TTextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWednesday"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/add_property_dividor_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"></View>
+
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <com.driveway.Component.BButton
+            android:id="@+id/btnThursday"
+            android:layout_weight="1"
+            android:text="Thursday"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/time_selector"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"></com.driveway.Component.BButton>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/tvThursdayChooseTime"
+            android:paddingLeft="@dimen/_10sdp"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="Choose Time"
+            android:drawableLeft="@drawable/drawable_left_watch"
+            android:textStyle="normal"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+        </com.driveway.Component.TTextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvThursday"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/add_property_dividor_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"></View>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <com.driveway.Component.BButton
+            android:id="@+id/btnFriday"
+            android:layout_weight="1"
+            android:text="Friday"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/time_selector"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"></com.driveway.Component.BButton>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/tvFridayChooseTime"
+            android:paddingLeft="@dimen/_10sdp"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="Choose Time"
+            android:drawableLeft="@drawable/drawable_left_watch"
+            android:textStyle="normal"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+        </com.driveway.Component.TTextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFriday"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/add_property_dividor_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"></View>
+
+
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <com.driveway.Component.BButton
+            android:id="@+id/btnSaturday"
+            android:layout_weight="1"
+            android:text="Saturday"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/time_selector"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"></com.driveway.Component.BButton>
+
+        <com.driveway.Component.TTextView
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/tvSaturdayChooseTime"
+            android:paddingLeft="@dimen/_10sdp"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="Choose Time"
+            android:drawableLeft="@drawable/drawable_left_watch"
+            android:textStyle="normal"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+        </com.driveway.Component.TTextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSaturday"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/add_property_dividor_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"></View>
+
+
+</LinearLayout>
+</ScrollView>
+        <com.driveway.Component.BButton
+            android:id="@+id/btnNext"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:drawableRight="@drawable/drawable_arrow_right"
+            android:text="NEXT"
+            android:textSize="@dimen/_14ssp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_border_up_side"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"></com.driveway.Component.BButton>
+    </RelativeLayout>

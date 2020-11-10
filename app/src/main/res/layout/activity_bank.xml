@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_40sdp"
+            android:src="@drawable/ic_left"
+            android:id="@+id/back"
+            android:layout_height="@dimen/_25sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <com.driveway.Component.TTextView
+            android:id="@+id/Title"
+            android:layout_toRightOf="@id/back"
+            android:text="Add Bank Details"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <com.driveway.Component.TTextView
+        android:id="@+id/tvMsg"
+        android:textSize="@dimen/_13ssp"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center|left"
+        android:textColor="#434242"
+        android:text="@string/please_check_that_all_account_details_entered_are_correct_in_my_driveway_is_not_responsible_for_incorrect_bank_account_information_provided_by_its_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bank_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.EEditText
+            android:id="@+id/edtBSB"
+            android:inputType="textCapCharacters"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:singleLine="true"
+            android:hint="BSB *"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        </com.driveway.Component.EEditText>
+
+        <com.driveway.Component.EEditText
+            android:id="@+id/edtAccountNumber"
+            android:inputType="number"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:singleLine="true"
+            android:hint="Account Number *"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        </com.driveway.Component.EEditText>
+
+        <com.driveway.Component.EEditText
+            android:id="@+id/edtAccountHolder"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:singleLine="true"
+            android:hint="Account Holder Name *"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        </com.driveway.Component.EEditText>
+
+    </LinearLayout>
+
+    <com.driveway.Component.BButton
+        android:id="@+id/btnSubmit"
+        android:text="Save"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:background="@drawable/rounded_border"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"></com.driveway.Component.BButton>
+
+    <View
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"></View>
+    <com.driveway.Component.TTextView
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"
+        android:text="Your Wallet Amount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp">
+    </com.driveway.Component.TTextView>
+
+    <com.driveway.Component.TTextView
+        android:id="@+id/tvWalletAmount"
+        android:textColor="@color/button_color"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp"
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp">
+    </com.driveway.Component.TTextView>
+
+    <com.driveway.Component.BButton
+        android:id="@+id/btnTransfer"
+        android:text="Transfer to Bank"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:background="@drawable/rounded_border"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"></com.driveway.Component.BButton>
+
+</LinearLayout>
+</ScrollView>

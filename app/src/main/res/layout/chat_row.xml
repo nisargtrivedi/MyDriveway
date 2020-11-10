@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="@dimen/_6sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.TTextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#B5B5B5"
+            android:layout_height="1dp">
+
+        </com.driveway.Component.TTextView>
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_10ssp"
+            android:textColor="#454545"
+            android:id="@+id/tvDateTime"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="asdasdasdasd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </com.driveway.Component.TTextView>
+        <com.driveway.Component.TTextView
+            android:background="#B5B5B5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp">
+
+        </com.driveway.Component.TTextView>
+    </LinearLayout>
+     <RelativeLayout
+
+         android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+         <com.driveway.Component.TTextView
+             android:layout_centerVertical="true"
+             android:layout_gravity="center"
+             android:textSize="@dimen/_14sdp"
+             android:textStyle="bold"
+             android:background="@drawable/round_character_fill_chat"
+             android:gravity="center"
+             android:visibility="gone"
+             android:textAllCaps="true"
+             android:id="@+id/UserCharacter"
+             android:textColor="@color/white"
+             android:text="J"
+             android:layout_width="@dimen/_38sdp"
+             android:layout_height="@dimen/_38sdp" />
+       <LinearLayout
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/_6sdp"
+           android:layout_toRightOf="@id/UserCharacter"
+           android:gravity="center|left"
+           android:id="@+id/llMain"
+           android:orientation="vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <com.driveway.Component.TTextView
+               android:maxEms="17"
+               android:textSize="@dimen/_11ssp"
+               android:id="@+id/tvMessage"
+               android:text="asdasdasdasdasdasd"
+               android:gravity="center|left"
+               android:textColor="@color/white"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+           </com.driveway.Component.TTextView>
+           <ImageView
+               android:id="@+id/img"
+               android:visibility="gone"
+               android:layout_width="@dimen/_200sdp"
+               android:layout_height="@dimen/_200sdp">
+           </ImageView>
+           <com.driveway.Component.TTextView
+               android:id="@+id/tvDate"
+               android:textSize="@dimen/_10ssp"
+               android:layout_below="@id/tvMessage"
+               android:text="12:00 PM"
+               android:layout_gravity="right"
+               android:textColor="@color/white"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+           </com.driveway.Component.TTextView>
+       </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

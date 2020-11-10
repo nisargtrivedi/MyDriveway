@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:paddingTop="@dimen/_15sdp"
+        android:background="@drawable/rounded_border_bottom_side"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/Back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back"></androidx.appcompat.widget.AppCompatImageView>
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvTitle"
+            android:layout_toRightOf="@id/Back"
+            android:text="UWA Car Parke 3"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_15ssp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"></com.driveway.Component.TTextView>
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:weightSum="3"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+            <com.driveway.Component.TTextView
+                android:id="@+id/tvOngoing"
+                android:textSize="@dimen/_13ssp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Ongoing"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </com.driveway.Component.TTextView>
+
+            <com.driveway.Component.TTextView
+                android:layout_weight="1"
+                android:id="@+id/tvUpcoming"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/white"
+                android:text="Upcoming"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </com.driveway.Component.TTextView>
+
+            <com.driveway.Component.TTextView
+                android:id="@+id/tvCompleted"
+                android:layout_weight="1"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/white"
+                android:text="Completed"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </com.driveway.Component.TTextView>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.driveway.Component.TTextView
+        android:id="@+id/tvMsg"
+        android:textColor="@color/button_color"
+        android:text="No booking found."
+        android:gravity="center"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.driveway.Component.TTextView>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBookings"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

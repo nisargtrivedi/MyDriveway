@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llMain"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.driveway.Component.RoundCornersImageView
+        android:id="@+id/imgParkingSpace"
+        android:src="@drawable/car_img"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp" />
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:translationZ="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginTop="-30dp"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/rounded_border_white_with_small_radius"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_13ssp"
+            android:id="@+id/tvTitle"
+            android:textColor="#EC6004"
+            android:textStyle="bold"
+            android:text="UWA Car Park 3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_10ssp"
+            android:layout_below="@id/tvTitle"
+            android:id="@+id/tvAddress"
+            android:textColor="@color/owner_dashboard_parking_list_row_text_color"
+            android:textStyle="normal"
+            android:drawableRight="@drawable/drawable_right_right_arrow"
+            android:text="UWA Car Park 3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_10ssp"
+            android:layout_below="@id/tvAddress"
+            android:id="@+id/tvAvailability"
+            android:textColor="@color/owner_dashboard_parking_list_row_text_color"
+            android:textStyle="normal"
+            android:text="UWA Car Park 3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/_40sdp"
+            android:src="@drawable/back_black"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvUserName"
+            android:text="John Owner"
+            android:textColor="#ED6004"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:layout_toRightOf="@id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvUserAddress"
+            android:text="UWA car park 3, Australia"
+            android:textColor="#454545"
+            android:textStyle="normal"
+            android:textSize="@dimen/_10ssp"
+            android:layout_below="@id/tvUserName"
+            android:layout_toRightOf="@id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:id="@+id/tvborder"
+        android:layout_below="@id/rlHeader"
+        android:background="#707070"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"></View>
+    <com.driveway.Component.TTextView
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/tvAdmintext"
+        android:gravity="center"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:text="@string/this_chat_is_being_reviewed_by_the_admin_for_unforeseen_future_disputes"
+        android:background="@drawable/rounded_chat_one"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_below="@id/tvborder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"></com.driveway.Component.TTextView>
+    <ListView
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:dividerHeight="@dimen/_10sdp"
+        android:divider="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/lvChat"
+        android:layout_above="@id/rlbottom"
+        android:layout_below="@id/tvAdmintext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/rlbottom"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@drawable/rounded_border_up_side"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <com.driveway.Component.EEditText
+            android:id="@+id/edtChat"
+            android:textCursorDrawable="@null"
+            android:textStyle="normal"
+            android:hint="Type a message"
+            android:textSize="@dimen/_12ssp"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:background="@color/button_color"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/btnGallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+        </com.driveway.Component.EEditText>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnGallery"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/btnSend"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_chat_select_image"
+            android:layout_height="@dimen/_30sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnSend"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_chat_send"
+            android:layout_height="@dimen/_30sdp"></androidx.appcompat.widget.AppCompatImageView>
+    </RelativeLayout>
+</RelativeLayout>

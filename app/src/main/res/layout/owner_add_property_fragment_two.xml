@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.driveway.Component.TTextView
+        android:id="@+id/tv_one"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="#FC6E00"
+        android:text="Upload Photos"
+        android:gravity="center"
+        android:textSize="@dimen/_13ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"></com.driveway.Component.TTextView>
+
+    <com.driveway.Component.TTextView
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_one"
+        android:textColor="@color/max_two_photo_text_color"
+        android:text="(max. 2 photos allowed)"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_below="@id/tv_one"
+        android:background="@drawable/rounded_border_white_with_small_radius_upload_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgUpload"
+            android:src="@drawable/ic_plus"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"></androidx.appcompat.widget.AppCompatImageView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvImage"
+        android:layout_above="@id/btnNext"
+        android:layout_below="@id/ll_one"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.driveway.Component.BButton
+        android:id="@+id/btnNext"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:drawableRight="@drawable/drawable_arrow_right"
+        android:text="NEXT"
+        android:textSize="@dimen/_14ssp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_border_up_side"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"></com.driveway.Component.BButton>
+</RelativeLayout>

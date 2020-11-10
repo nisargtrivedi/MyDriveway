@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/button_color"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:paddingTop="@dimen/_15sdp"
+        android:background="@color/button_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/Back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back"></androidx.appcompat.widget.AppCompatImageView>
+
+        <com.driveway.Component.TTextView
+            android:layout_toRightOf="@id/Back"
+            android:text="Add Property"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_15ssp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/rounded_border_up_side_white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:paddingRight="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+            <com.driveway.Component.TTextView
+                android:drawablePadding="@dimen/_4sdp"
+                android:id="@+id/PropertyDetails"
+                android:textSize="@dimen/_11ssp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:textColor="@color/property_color"
+                android:textStyle="bold"
+                android:text="Property Details"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"></com.driveway.Component.TTextView>
+            <com.driveway.Component.TTextView
+                android:drawablePadding="@dimen/_4sdp"
+                android:id="@+id/Photo"
+                android:textSize="@dimen/_11ssp"
+                android:layout_weight="1.2"
+                android:text="Photos"
+                android:textStyle="bold"
+                android:textColor="@color/property_color"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"></com.driveway.Component.TTextView>
+            <com.driveway.Component.TTextView
+                android:drawablePadding="@dimen/_4sdp"
+                android:id="@+id/Availability"
+                android:textSize="@dimen/_11ssp"
+                android:layout_weight="1.2"
+                android:textColor="@color/property_color"
+                android:textStyle="bold"
+                android:text="Availability"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"></com.driveway.Component.TTextView>
+            <com.driveway.Component.TTextView
+                android:drawablePadding="@dimen/_4sdp"
+                android:id="@+id/Rates"
+                android:textSize="@dimen/_11ssp"
+                android:layout_weight="1.2"
+                android:text="Rates"
+                android:textStyle="bold"
+                android:textColor="@color/property_color"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"></com.driveway.Component.TTextView>
+        </LinearLayout>
+        <View
+            android:background="#707070"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"></View>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+
+    </LinearLayout>
+
+</LinearLayout>

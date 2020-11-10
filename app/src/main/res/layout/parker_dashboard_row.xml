@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/BookingCard"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardElevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:minHeight="@dimen/_200sdp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:paddingBottom="@dimen/_2sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/car_img"
+        android:layout_width="match_parent"
+        android:src="@drawable/car_img"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/_60sdp"></androidx.appcompat.widget.AppCompatImageView>
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.driveway.Component.TTextView
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/tvTitle"
+            android:text="UWA car park3"
+            android:layout_toLeftOf="@id/tvKM"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvKM"
+            android:text="16 KM"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textColor="#EF6205"
+            android:textSize="@dimen/_11ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.driveway.Component.TTextView
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:minLines="2"
+        android:textSize="@dimen/_9ssp"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/drawable_maps"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text=""
+        android:paddingRight="@dimen/_3sdp"
+        android:layout_toLeftOf="@id/tvMinutes"
+        android:drawablePadding="@dimen/_3sdp"
+        android:id="@+id/PropertyAddress"
+        android:textColor="#FF0F0E0E"
+        android:textStyle="normal"></com.driveway.Component.TTextView>
+    <com.driveway.Component.TTextView
+        android:textSize="@dimen/_9ssp"
+        android:layout_alignParentRight="true"
+        android:textColor="#383838"
+        android:id="@+id/tvMinutes"
+        android:layout_centerInParent="true"
+        android:text="0 min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <View
+        android:layout_margin="@dimen/_5sdp"
+        android:background="#CBCBCB"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"></View>
+    <RelativeLayout
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_9ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="80% Availability"
+            android:layout_toLeftOf="@id/tvRatings"
+            android:drawablePadding="@dimen/_3sdp"
+            android:id="@+id/tvAvailability"
+            android:textColor="#FF0F0E0E"
+            android:textStyle="normal"></com.driveway.Component.TTextView>
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_9ssp"
+            android:layout_alignParentRight="true"
+            android:textColor="#383838"
+            android:gravity="center"
+            android:drawablePadding="@dimen/_3sdp"
+            android:id="@+id/tvRatings"
+            android:drawableRight="@drawable/drawable_star_rating"
+            android:text="3.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <View
+        android:layout_margin="@dimen/_3sdp"
+        android:background="#CBCBCB"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"></View>
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.driveway.Component.TTextView
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_9ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="Parking Type"
+            android:layout_toLeftOf="@id/tvType"
+            android:drawablePadding="@dimen/_3sdp"
+            android:id="@+id/tvParkingType"
+            android:textColor="#FF0F0E0E"
+            android:textStyle="normal"></com.driveway.Component.TTextView>
+        <com.driveway.Component.TTextView
+            android:background="@drawable/border_button_orange"
+            android:textSize="@dimen/_9ssp"
+            android:layout_alignParentRight="true"
+            android:textColor="#383838"
+            android:padding="@dimen/_3sdp"
+            android:gravity="center"
+            android:id="@+id/tvType"
+            android:text="Driveway"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:background="#CBCBCB"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"></View>
+
+    <com.driveway.Component.BButton
+        android:id="@+id/btnBook"
+        android:textAllCaps="false"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Book Now"
+        android:textSize="@dimen/_9ssp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_border"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_20sdp"></com.driveway.Component.BButton>
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

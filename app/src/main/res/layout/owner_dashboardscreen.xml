@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:elevation="@dimen/_10sdp"
+        android:background="@drawable/rounded_border_bottom_side"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp">
+
+        <com.driveway.Component.EEditText
+            android:id="@+id/edtSearch"
+            android:hint="Search"
+            android:textSize="@dimen/_13ssp"
+            android:textColorHint="@color/editext_search"
+            android:textColor="@color/editext_search"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:drawableRight="@drawable/drawable_right_icon_search"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/rounded_border_white_with_small_radius"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+        </com.driveway.Component.EEditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="-40dp"
+        android:translationZ="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.driveway.Component.TTextView
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:background="@drawable/rounded_border_white_with_small_radius"
+            android:visibility="gone"
+            android:id="@+id/tvNoPropertyFound"
+            android:gravity="center"
+            android:textColor="@color/app_back_color"
+            android:textSize="@dimen/_14ssp"
+            android:text="No property found"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.driveway.Component.TTextView>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RvParking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            app:backgroundTint="@color/floating_button_color"
+            android:translationZ="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_16sdp"
+            app:srcCompat="@drawable/ic_add" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

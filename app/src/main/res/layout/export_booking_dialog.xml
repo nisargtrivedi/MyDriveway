@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:id="@+id/llFilter"
+    android:elevation="@dimen/_10sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rounded_border_up_side_white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_20sdp"
+            android:src="@drawable/close"
+            android:scaleType="centerInside"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <com.driveway.Component.TTextView
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/close"
+            android:textColor="@color/button_color"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14ssp"
+            android:text="Export Booking Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="#B2B2B2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"></View>
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvDate"
+            android:textSize="@dimen/_13ssp"
+            android:text="@string/date"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableLeft="@drawable/drawable_left_fill_circle"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.driveway.Component.TTextView>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.driveway.Component.TTextView
+                android:paddingRight="@dimen/_5sdp"
+                android:drawableRight="@drawable/drawable_black_calendar"
+                android:id="@+id/edtStartDate"
+                android:singleLine="true"
+                android:gravity="center|left"
+                android:layout_weight="1"
+                android:textColor="#7C7C7C"
+                android:textSize="@dimen/_12ssp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColorHint="#7C7C7C"
+                android:hint="12/02/2019"
+                android:background="@drawable/round_booking_owner_email"
+                android:layout_width="0dp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_height="@dimen/_40sdp">
+
+            </com.driveway.Component.TTextView>
+
+            <com.driveway.Component.TTextView
+                android:paddingRight="@dimen/_5sdp"
+                android:drawableRight="@drawable/drawable_black_calendar"
+                android:id="@+id/edtEndDate"
+                android:singleLine="true"
+                android:gravity="center|left"
+                android:layout_weight="1"
+                android:textColor="#7C7C7C"
+                android:textSize="@dimen/_12ssp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColorHint="#7C7C7C"
+                android:hint="12/02/2019"
+                android:background="@drawable/round_booking_owner_email"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_height="@dimen/_40sdp">
+
+            </com.driveway.Component.TTextView>
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="#C4C4C4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"></View>
+
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_13ssp"
+            android:id="@+id/tvMonth"
+            android:text="@string/monthly"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableLeft="@drawable/drawable_left_normal_circle"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.driveway.Component.TTextView>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.driveway.Component.TTextView
+                android:enabled="false"
+                android:paddingRight="@dimen/_5sdp"
+                android:drawableRight="@drawable/drawable_arrow_down"
+                android:id="@+id/edtMonth"
+                android:singleLine="true"
+                android:gravity="center|left"
+                android:layout_weight="1"
+                android:textColor="#7C7C7C"
+                android:textSize="@dimen/_12ssp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColorHint="#7C7C7C"
+                android:hint="Select Month"
+                android:background="@drawable/round_booking_owner_email"
+                android:layout_width="0dp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_height="@dimen/_40sdp">
+
+            </com.driveway.Component.TTextView>
+
+            <RelativeLayout
+                android:paddingRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_booking_owner_email"
+                android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/edtYears"
+                android:singleLine="true"
+                android:gravity="center|left"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="#7C7C7C"
+                android:spinnerMode="dropdown"
+                android:textSize="@dimen/_12ssp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColorHint="#7C7C7C"
+                android:hint="Select Year"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_height="@dimen/_40sdp">
+
+
+            </Spinner>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/drawable_arrow_down" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="#C4C4C4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"></View>
+
+
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvQuater"
+            android:textSize="@dimen/_13ssp"
+            android:text="@string/quartly"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableLeft="@drawable/drawable_left_normal_circle"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.driveway.Component.TTextView>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.driveway.Component.TTextView
+                android:enabled="false"
+                android:paddingRight="@dimen/_5sdp"
+                android:drawableRight="@drawable/drawable_arrow_down"
+                android:id="@+id/edtSelectStartMonth"
+                android:singleLine="true"
+                android:gravity="center|left"
+                android:layout_weight="1"
+                android:textColor="#7C7C7C"
+                android:textSize="@dimen/_12ssp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColorHint="#7C7C7C"
+                android:hint="Select Months"
+                android:background="@drawable/round_booking_owner_email"
+                android:layout_width="0dp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_height="@dimen/_40sdp">
+
+            </com.driveway.Component.TTextView>
+
+
+            <RelativeLayout
+                android:paddingRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_booking_owner_email"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/edtSelectEndMonth"
+                    android:singleLine="true"
+                    android:gravity="center|left"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:textColor="#7C7C7C"
+                    android:spinnerMode="dropdown"
+                    android:textSize="@dimen/_12ssp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textColorHint="#7C7C7C"
+                    android:hint="Select Year"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_height="@dimen/_40sdp">
+
+
+                </Spinner>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/drawable_arrow_down" />
+
+            </RelativeLayout>
+
+
+<!--            <com.driveway.Component.TTextView-->
+<!--                android:enabled="false"-->
+<!--                android:paddingRight="@dimen/_5sdp"-->
+<!--                android:drawableRight="@drawable/drawable_arrow_down"-->
+<!--                android:id="@+id/edtSelectEndMonth"-->
+<!--                android:singleLine="true"-->
+<!--                android:gravity="center|left"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textColor="#7C7C7C"-->
+<!--                android:textSize="@dimen/_12ssp"-->
+<!--                android:paddingLeft="@dimen/_5sdp"-->
+<!--                android:textColorHint="#7C7C7C"-->
+<!--                android:hint="Select Month"-->
+<!--                android:background="@drawable/round_booking_owner_email"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                android:layout_height="@dimen/_40sdp">-->
+
+<!--            </com.driveway.Component.TTextView>-->
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="#C4C4C4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"></View>
+
+    </LinearLayout>
+    <com.driveway.Component.TTextView
+        android:textColor="@color/black"
+        android:id="@+id/tvSelectedData"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        android:hint=""
+        android:layout_above="@id/btnProcess"
+        android:background="@drawable/add_card_round_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp">
+
+    </com.driveway.Component.TTextView>
+    <com.driveway.Component.TTextView
+        android:id="@+id/btnProcess"
+        android:gravity="center"
+        app:textAllCaps="true"
+        android:textSize="@dimen/_13ssp"
+        android:text="Export Now"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_border_up_side"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"></com.driveway.Component.TTextView>
+
+</LinearLayout>
+</LinearLayout>

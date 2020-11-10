@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/lvItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/drawable_left_location"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_20sdp"></ImageView>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.driveway.Component.TTextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text=""
+                android:gravity="center|left"
+                android:textSize="@dimen/_10ssp"
+                android:minHeight="@dimen/_20sdp"
+                android:id="@+id/autocompleteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+            <com.driveway.Component.TTextView
+                android:text=""
+                android:id="@+id/location_two"
+                android:textColor="#808080"
+                android:gravity="top|left"
+                android:textSize="@dimen/_10ssp"
+                android:minHeight="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/drawable_right_location"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_20sdp"></ImageView>
+
+    </LinearLayout>
+    <View
+
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:background="@color/location_dividor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp" />
+</LinearLayout>

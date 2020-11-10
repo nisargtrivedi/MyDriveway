@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="@dimen/_10sdp"
+    android:gravity="center"
+    android:elevation="@dimen/_10sdp"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/ic_bubble"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp">
+
+    <com.driveway.Component.TTextView
+        android:id="@+id/owner"
+        android:text="OWNER"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/button_color"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"></com.driveway.Component.TTextView>
+
+    <com.driveway.Component.TTextView
+        android:id="@+id/parker"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/owner"
+        android:gravity="center"
+        android:text="PARKER"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp">
+
+    </com.driveway.Component.TTextView>
+</RelativeLayout>

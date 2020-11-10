@@ -1,0 +1,40 @@
+//{
+//  "project_info": {
+//    "project_number": "249651958026",
+//    "firebase_url": "https://mydrivewayparking-15eed.firebaseio.com",
+//    "project_id": "mydrivewayparking-15eed",
+//    "storage_bucket": "mydrivewayparking-15eed.appspot.com"
+//  },
+//  "client": [
+//    {
+//      "client_info": {
+//        "mobilesdk_app_id": "1:249651958026:android:31f0598a8522ca0d162af3",
+//        "android_client_info": {
+//          "package_name": "com.driveway"
+//        }
+//      },
+//      "oauth_client": [
+//        {
+//          "client_id": "249651958026-5qmijqh2idl6ip00v3a9kqs8kluf585l.apps.googleusercontent.com",
+//          "client_type": 3
+//        }
+//      ],
+//      "api_key": [
+//        {
+//          "current_key": "AIzaSyCf6cxpuv2AaVDteWQQfYfmROnmMoQo_GA"
+//        }
+//      ],
+//      "services": {
+//        "appinvite_service": {
+//          "other_platform_oauth_client": [
+//            {
+//              "client_id": "249651958026-5qmijqh2idl6ip00v3a9kqs8kluf585l.apps.googleusercontent.com",
+//              "client_type": 3
+//            }
+//          ]
+//        }
+//      }
+//    }
+//  ],
+//  "configuration_version": "1"
+//}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/button_color"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/weekTitlePaddingTop"
+    android:paddingTop="@dimen/weekTitlePaddingBottom"
+    android:weightSum="7">
+
+    <TextView
+        android:textColor="@color/white"
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:tag="dayOfWeek1"
+        android:text="SUN" />
+
+    <TextView
+        android:textColor="@color/white"
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:tag="dayOfWeek2"
+        android:text="MON" />
+
+    <TextView
+        android:textColor="@color/white"
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:tag="dayOfWeek3"
+        android:text="TUE" />
+
+    <TextView
+        android:textColor="@color/white"
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:tag="dayOfWeek4"
+        android:text="WED" />
+
+    <TextView
+        android:textColor="@color/white"
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:tag="dayOfWeek5"
+        android:text="THU" />
+
+    <TextView
+        android:textColor="@color/white"
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:tag="dayOfWeek6"
+        android:text="FRI" />
+
+    <TextView
+        android:textColor="@color/white"
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:tag="dayOfWeek7"
+        android:text="SAT" />
+</LinearLayout>

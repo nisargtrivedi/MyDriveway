@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.driveway">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <application
+        android:name=".Activity.MyDriveWayApplication"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeTwo">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".Activity.MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+        <activity android:name=".Activity.FeedbackScreen" android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity android:name=".Activity.Splash_" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainScreen"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".Activity.LoginScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".Activity.SignUpScreen"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ParkerDashboardScreen" android:screenOrientation="portrait"  /> <!-- <activity android:name=".Activity.MainNavigationScreen"> -->
+
+        <!-- </activity> -->
+        <activity android:name=".Activity.OwnerDashboardScreen" android:screenOrientation="portrait"  />
+        <activity android:name=".Activity.OwnerPropertyAddScreen" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ForgotPasswordScreen" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".Activity.OwnerProfileScreen" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.OwnerProfileEditScreen" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ParkerProfileScreen" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ParkerAddCarScreen" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ReportScreen" android:screenOrientation="portrait">
+
+
+        </activity>
+
+        <activity android:name=".Activity.ParkerManageCard" android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity android:name=".Activity.ParkerAddNewCard" android:screenOrientation="portrait">
+
+
+
+        </activity>
+        <activity android:name=".Activity.OwnerPropertyDetailScreen" android:screenOrientation="portrait">
+
+
+
+        </activity>
+        <activity android:name=".Activity.OwnerEditProperty.OwnerPropertyEditScreen" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ParkerBookingScreen" android:screenOrientation="portrait">
+
+
+
+        </activity>
+        <activity android:name=".Activity.ParkerBookingStayScreen" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Activity.ParkerBookingStayConfirmScreen" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+
+        </activity>
+        <activity android:name=".Activity.ParkerDashboardScreenTwo" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ParkerBooking.ParkerBookingListScreen" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ParkerBooking.ParkerBookingDetailScreen" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ParkerBooking.ParkerBookingCalendarListScreen" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ChangePasswordScreen" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+
+
+        </activity>
+        <activity android:name=".Activity.OwnerBookingDetail.BookingDetail_" android:screenOrientation="portrait">
+
+
+        </activity>
+
+        <activity android:name=".Activity.OwnerBookingDetail.BookingList_" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+
+        </activity>
+
+        <activity android:name=".Activity.OwnerBookingDetail.OwnerBookingProperty_" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Activity.NotificationActivity_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.TermsAndConditionActivity_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.AffiliationActivity_" android:screenOrientation="portrait">
+
+
+
+        </activity>
+        <activity android:name=".Activity.ParkerBooking.ParkerBookingDetailEditScreen_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.SettingsActivity_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.BankActivity_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.FeedbackScreen_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ActivityShareMyDriveWay_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.AffilityDetail_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ActivityChatScreen_" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Activity.ParkerBooking.BookingChat_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ActivityHowAppWork_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.ActivityInvite_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.NotificationChat_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.OwnerBookingDetail.ConversationActivity_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.OwnerBookingDetail.ConversationChat_" android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.ImagePickerActivity"></activity>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="driveway_channel1"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path">
+            </meta-data>
+        </provider>
+
+
+        <service android:name=".FCM.FcmInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".background_service.ChatService" android:exported="true" android:enabled="true">
+
+        </service>
+
+    </application>
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <dist:module dist:instant="true" />
+
+</manifest>

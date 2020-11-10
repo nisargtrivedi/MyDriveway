@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:paddingTop="@dimen/_15sdp"
+        android:background="@drawable/rounded_border_bottom_side"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/Back"
+            android:padding="3dp"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back"></androidx.appcompat.widget.AppCompatImageView>
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/tvTitle"
+            android:layout_toRightOf="@id/Back"
+            android:text=""
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_16ssp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"></com.driveway.Component.TTextView>
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:weightSum="1"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+            <com.driveway.Component.TTextView
+                android:id="@+id/tvAllConversation"
+                android:textSize="@dimen/_15ssp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_3sdp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="All Conversations"
+                android:gravity="center|left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </com.driveway.Component.TTextView>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <com.driveway.Component.TTextView
+        android:gravity="center"
+        android:id="@+id/tvMsg"
+        android:visibility="gone"
+        android:textSize="@dimen/_15ssp"
+        android:layout_below="@id/header"
+        android:textColor="@color/button_color"
+        android:text="No conversations."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.driveway.Component.TTextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/_10sdp"
+
+        android:background="@color/white"
+        android:layout_below="@id/header"
+        android:id="@+id/lvConversation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

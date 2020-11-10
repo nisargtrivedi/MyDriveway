@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_20sdp"
+            android:src="@drawable/ic_left"
+            android:id="@+id/back"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+        <com.driveway.Component.TTextView
+            android:paddingLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@id/back"
+            android:text="Feedback"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.driveway.Component.TTextView>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/feedback"
+        android:layout_height="@dimen/_150sdp"></androidx.appcompat.widget.AppCompatImageView>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+          <com.driveway.Component.EEditText
+              android:id="@+id/edtfeature"
+              android:paddingTop="@dimen/_5sdp"
+              android:layout_marginLeft="@dimen/_10sdp"
+              android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:textColor="#801D1D1D"
+            android:textSize="@dimen/_12ssp"
+            android:paddingRight="@dimen/_7sdp"
+            android:hint="@string/which_feature_s_would_you_like_to_see_in_the_future"
+            android:paddingLeft="@dimen/_10sdp"
+            android:gravity="center|left|top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"></com.driveway.Component.EEditText>
+
+        <com.driveway.Component.EEditText
+            android:id="@+id/edtexperience"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/border_button_with_fill_fragment_three_watch"
+            android:textColor="#801D1D1D"
+            android:textSize="@dimen/_12ssp"
+            android:paddingRight="@dimen/_7sdp"
+            android:hint="@string/share_your_experience_with_us_we_would_love_to_hear_from_you"
+            android:paddingLeft="@dimen/_10sdp"
+            android:gravity="center|left|top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"></com.driveway.Component.EEditText>
+
+
+        <com.driveway.Component.TTextView
+        android:id="@+id/btnSubmit"
+        android:gravity="center"
+        android:text="SUBMIT FEEDBACK"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:background="@drawable/rounded_border"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

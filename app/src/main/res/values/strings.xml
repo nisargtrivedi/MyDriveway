@@ -1,0 +1,102 @@
+<!DOCTYPE resources [
+    <!ENTITY appname "*">
+    <!ENTITY author "Oded">
+    ]>
+
+<resources>
+    <string name="app_name">QPark</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up_with_underline"><b><u>Sign Up</u></b></string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in_with_underline"><b><u>Sign In</u></b></string>
+    <string name="menu_one">My Parking Space</string>
+    <string name="menu_two">Bookings</string>
+    <string name="menu_three">Notifications</string>
+    <string name="settings">Settings</string>
+    <string name="share_in_my_driveway">Share QPark</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="logout">Logout</string>
+
+
+    <string name="material_calendar_monday">Mon</string>
+    <string name="material_calendar_tuesday">Tue</string>
+    <string name="material_calendar_wednesday">Wed</string>
+    <string name="material_calendar_thursday">Thu</string>
+    <string name="material_calendar_friday">Fri</string>
+    <string name="material_calendar_saturday">Sat</string>
+    <string name="material_calendar_sunday">Sun</string>
+    <string name="share_your_experience_with_us_we_would_love_to_hear_from_you">Share your experience with us. We would love to hear from you.</string>
+    <string name="which_feature_s_would_you_like_to_see_in_the_future">Which feature(s) would you like to see in the future?</string>
+    <string name="uwa_car_park">UWA Car Park</string>
+    <string name="wa_australia">Wa,Australia</string>
+    <string name="send_now">SEND NOW</string>
+    <string name="quartly">Quartly</string>
+    <string name="monthly">Monthly</string>
+    <string name="date">Date</string>
+    <string name="lorem_ipsum_or_lipsum_as_it_is_sometim_es_known_is_dummy_text_used">Lorem ipsum, or lipsum as it is sometim- es known, is dummy text used.</string>
+
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+
+    <string name="terms_conditions_two"><b><u><![CDATA[Terms & Conditions]]></u></b></string>
+
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="privacy_policy_two"><b><u>Privacy Policy</u></b></string>
+    <string name="bank">Manage Bank Details</string>
+    <string name="Affiliations">Affiliations</string>
+    <string name="changepassword">Change Password</string>
+    <string name="feedback">Feedback</string>
+    <string name="please_check_that_all_account_details_entered_are_correct_in_my_driveway_is_not_responsible_for_incorrect_bank_account_information_provided_by_its_users">Please check that all account details entered are correct. In My Driveway is not responsible for incorrect bank account information provided by its users.</string>
+    <string name="arrow"><h5>&#10230;</h5></string>
+    <string name="this_chat_is_being_reviewed_by_the_admin_for_unforeseen_future_disputes"><b>&#9432;</b>This chat is being reviewed by the Admin for unforeseen future disputes.</string>
+    <string name="how_the_app_works">How The App Works</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take photo</string>
+    <string name="lbl_choose_from_gallery">From camera roll</string>
+    <string name="str"><font color='#d3d3d3'>*</font></string>
+<!--    <string name="property_name">Property Name</string>-->
+    <string name="property_name"><font fgcolor='#FC7200'>Property Name</font><font fgcolor='#FF8E8E93'> *</font></string>
+    <string name="property_address"><font fgcolor='#FC7200'>Property Address</font><font fgcolor='#FF8E8E93'> *</font></string>
+    <string name="parking_area"><font fgcolor='#FC7200'>Parking Area</font><font fgcolor='#FF8E8E93'> *</font></string>
+    <string name="select_max_cars"><font fgcolor='#FC7200'>Select Max.Cars</font><font fgcolor='#FF8E8E93'> *</font></string>
+    <string name="about_property"><font fgcolor='#FC7200'>About Property</font><font fgcolor='#FF8E8E93'> *</font></string>
+    <string name="parking_type"><font fgcolor='#FC7200'>Parking Type</font><font fgcolor='#FF8E8E93'> *</font></string>
+    <string name="i_agree_to_the">I agree to the </string>
+
+
+    <array name="material_calendar_day_abbreviations_array">
+        <item>@string/material_calendar_sunday</item>
+        <item>@string/material_calendar_monday</item>
+        <item>@string/material_calendar_tuesday</item>
+        <item>@string/material_calendar_wednesday</item>
+        <item>@string/material_calendar_thursday</item>
+        <item>@string/material_calendar_friday</item>
+        <item>@string/material_calendar_saturday</item>
+    </array>
+
+    <array name="material_calendar_months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+
+
+</resources>

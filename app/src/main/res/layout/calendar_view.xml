@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:elevation="@dimen/_10sdp"
+    android:padding="@dimen/_6sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_border_white"
+    android:orientation="vertical">
+
+    <!-- date toolbar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:elevation="@dimen/_10sdp"
+        android:id="@+id/calendarHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageButton
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/previousButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawable_left_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_marginRight="@dimen/_20sdp"
+            android:id="@+id/forwardButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawable_rightt_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.driveway.Component.TTextView
+            android:id="@+id/currentDateLabel"
+            android:layout_width="0dp"
+            android:text=""
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintLeft_toRightOf="@id/previousButton"
+            app:layout_constraintRight_toLeftOf="@id/forwardButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- eventDays header -->
+    <LinearLayout
+        android:background="#FFEE6104"
+        android:id="@+id/abbreviationsBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:id="@+id/mondayLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/material_calendar_monday"
+            android:textColor="#fff" />
+
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:id="@+id/tuesdayLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/material_calendar_tuesday"
+            android:textColor="#fff" />
+
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:id="@+id/wednesdayLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/material_calendar_wednesday"
+            android:textColor="#fff" />
+
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:id="@+id/thursdayLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/material_calendar_thursday"
+            android:textColor="#fff" />
+
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:id="@+id/fridayLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/material_calendar_friday"
+            android:textColor="#fff" />
+
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:id="@+id/saturdayLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/material_calendar_saturday"
+            android:textColor="#fff" />
+
+        <com.driveway.Component.TTextView
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:id="@+id/sundayLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/material_calendar_sunday"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <ScrollView
+        android:fillViewport="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.driveway.calendarcomponent.CalendarViewPager
+
+            android:id="@+id/calendarViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:paddingTop="@dimen/_15sdp"
+        android:background="@color/button_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/Back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back"></androidx.appcompat.widget.AppCompatImageView>
+
+        <com.driveway.Component.TTextView
+            android:layout_toRightOf="@id/Back"
+            android:text="Bookings"
+            android:paddingRight="@dimen/_5sdp"
+            android:id="@+id/menu_Settings"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:drawableRight="@drawable/drawable_settings"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_15ssp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"></com.driveway.Component.TTextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:elevation="@dimen/_6sdp"
+        android:padding="@dimen/_6sdp"
+        android:id="@+id/rlCalendar"
+        android:layout_below="@id/header"
+        android:background="@drawable/rounded_border_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.driveway.Component.CustomCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleLayoutBackgroundColor="@android:color/transparent"
+            app:currentDayOfMonthColor="@android:color/transparent"
+            app:calendarBackgroundColor="@android:color/transparent"
+            app:calendarTitleTextColor="@color/black"
+            app:dayOfMonthTextColor="@color/white"
+            app:dayOfWeekTextColor="@color/black"
+            app:selectedDayBackgroundColor="@color/button_color"
+            app:weekLayoutBackgroundColor="@color/button_color"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:elevation="@dimen/_5sdp"
+        android:layout_below="@id/header"
+        android:translationZ="@dimen/_10sdp"
+        android:visibility="gone"
+        android:id="@+id/llView"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="-80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:paddingRight="@dimen/_30sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:elevation="@dimen/_5sdp"
+            android:background="@drawable/rounded_border_white_with_small_radius"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llOne"
+                android:background="@drawable/menu_selector"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:scaleType="centerInside"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/filter_list_image" />
+
+                <com.driveway.Component.TTextView
+                    android:id="@+id/tvListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="List View"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llTwo"
+                android:background="@drawable/menu_selector"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:scaleType="centerInside"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/filter_calendar" />
+
+                <com.driveway.Component.TTextView
+                    android:id="@+id/tvCalendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Calendar View"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llThree"
+                android:background="@drawable/menu_selector"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:scaleType="centerInside"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/filter_share" />
+
+                <com.driveway.Component.TTextView
+                    android:id="@+id/tvExportView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Export PDF"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llFour"
+                android:background="@drawable/menu_selector"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:scaleType="centerInside"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/filter_email" />
+
+                <com.driveway.Component.TTextView
+                    android:id="@+id/tvEmailMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Email Me"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llFive"
+                android:background="@drawable/menu_selector"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_black_filter" />
+
+                <com.driveway.Component.TTextView
+                    android:id="@+id/tvFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Filters"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <com.driveway.Component.TTextView
+        android:layout_below="@id/rlCalendar"
+        android:id="@+id/tvMsg"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="No booking found"
+        android:gravity="center"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/button_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.driveway.Component.TTextView>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_below="@id/rlCalendar"
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/rlCalendar"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:id="@+id/rvBookings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

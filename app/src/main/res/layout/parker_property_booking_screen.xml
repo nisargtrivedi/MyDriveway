@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlone"
+        android:paddingBottom="@dimen/_10sdp"
+        android:translationZ="@dimen/_10sdp"
+        android:background="@drawable/rounded_border_bottom_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:src="@drawable/ic_left"
+            android:id="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:layout_height="@dimen/_20sdp"></androidx.appcompat.widget.AppCompatImageView>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/llone"
+            android:layout_toRightOf="@id/back"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_18sdp"
+                android:src="@drawable/drawable_left_fill_circle"
+                android:layout_alignParentLeft="true"
+                android:layout_height="@dimen/_18sdp"></androidx.appcompat.widget.AppCompatImageView>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/ic_line"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/_30sdp"></androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_18sdp"
+                android:src="@drawable/ic_location_red"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/_18sdp"></androidx.appcompat.widget.AppCompatImageView>
+
+
+        </LinearLayout>
+            <com.driveway.Component.EEditText
+                android:enabled="false"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/rounded_border_booking_parker"
+                android:layout_toRightOf="@id/llone"
+                android:id="@+id/YourLocation"
+                android:text="Your Location"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_36sdp"/>
+
+
+            <com.driveway.Component.EEditText
+                android:enabled="false"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/rounded_border_booking_parker"
+                android:layout_toRightOf="@id/llone"
+                android:layout_below="@id/YourLocation"
+                android:textStyle="bold"
+                android:text="UWA CAR PARK"
+                android:id="@+id/Location"
+                android:singleLine="true"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_36sdp"/>
+
+    </RelativeLayout>
+    <include layout="@layout/activity_maps" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_above="@id/bottom" android:layout_below="@id/rlone"></include>
+
+    <include android:id="@+id/bottom" android:layout_alignParentBottom="true" android:layout_height="wrap_content" android:layout_width="match_parent" layout="@layout/parker_booking_bottom_dialog"></include>
+</RelativeLayout>

@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="right"
+            android:id="@+id/btn"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/btnEditBooking"
+            android:layout_width="@dimen/_30sdp"
+            android:src="@drawable/ic_question"
+            android:layout_height="@dimen/_30sdp"></androidx.appcompat.widget.AppCompatImageView>
+
+        <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.TTextView
+            android:text="Short Stay"
+            android:gravity="center|left"
+            android:layout_weight="0.7"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+
+        </com.driveway.Component.TTextView>
+        <LinearLayout
+            android:background="@drawable/rounded_border_stay_background"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.driveway.Component.TTextView
+                android:id="@+id/ShortStayPrice"
+                android:background="@drawable/border_button_with_fill_fragment_three_watch"
+                android:textColor="#726D6D"
+                android:textSize="@dimen/_12ssp"
+                android:paddingRight="@dimen/_7sdp"
+                android:drawableRight="@drawable/drawable_arrow_down"
+                android:text="Select Price"
+                android:paddingLeft="@dimen/_10sdp"
+                android:gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"></com.driveway.Component.TTextView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llShortStayPrice"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_one"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="15 min"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp" />
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_two"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="30 min"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"></com.driveway.Component.TTextView>
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_three"
+                        android:gravity="center"
+                        android:ellipsize="marquee"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="45 min"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"></com.driveway.Component.TTextView>
+                </LinearLayout>
+                <com.driveway.Component.EEditText
+                    android:enabled="false"
+                    android:maxLength="5"
+                    android:textCursorDrawable="@color/white"
+                    android:singleLine="true"
+                    android:id="@+id/edtShortStayPrice"
+                    android:inputType="number"
+                    android:hint="Enter Price"
+                    android:text="0"
+                    android:digits="0123456789"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"
+                    android:drawablePadding="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:drawableLeft="@drawable/drawable_arrow_dollar"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/border_button_with_fill"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"></com.driveway.Component.EEditText>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.TTextView
+            android:text="Hourly"
+            android:gravity="center|left"
+            android:layout_weight="0.7"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+
+        </com.driveway.Component.TTextView>
+        <LinearLayout
+            android:background="@drawable/rounded_border_stay_background"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.driveway.Component.TTextView
+                android:id="@+id/HourPrice"
+                android:background="@drawable/border_button_with_fill_fragment_three_watch"
+                android:textColor="#726D6D"
+                android:textSize="@dimen/_12ssp"
+                android:paddingRight="@dimen/_7sdp"
+                android:drawableRight="@drawable/drawable_arrow_down"
+                android:text="Select Price"
+                android:paddingLeft="@dimen/_10sdp"
+                android:gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"></com.driveway.Component.TTextView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llHourStayPrice"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_Hourone"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="1-4 Hour"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp" />
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_Hourtwo"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="5-8 Hour"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"></com.driveway.Component.TTextView>
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_Hourthree"
+                        android:gravity="center"
+                        android:ellipsize="marquee"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="8+ Hour"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"></com.driveway.Component.TTextView>
+                </LinearLayout>
+                <com.driveway.Component.EEditText
+                    android:singleLine="true"
+                    android:enabled="false"
+                    android:textCursorDrawable="@color/white"
+                    android:maxLength="5"
+                    android:imeOptions="actionDone"
+                    android:id="@+id/edtHourPrice"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:hint="Enter Price"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"
+                    android:drawablePadding="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:drawableLeft="@drawable/drawable_arrow_dollar"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/border_button_with_fill"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"></com.driveway.Component.EEditText>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.TTextView
+            android:text="Daily"
+            android:gravity="center|left"
+            android:layout_weight="0.7"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+
+        </com.driveway.Component.TTextView>
+        <LinearLayout
+            android:background="@drawable/rounded_border_stay_background"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.driveway.Component.TTextView
+                android:id="@+id/DailyPrice"
+                android:background="@drawable/border_button_with_fill_fragment_three_watch"
+                android:textColor="#726D6D"
+                android:textSize="@dimen/_12ssp"
+                android:paddingRight="@dimen/_7sdp"
+                android:drawableRight="@drawable/drawable_arrow_down"
+                android:text="Select Price"
+                android:paddingLeft="@dimen/_10sdp"
+                android:gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"></com.driveway.Component.TTextView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llDailyPrice"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_Dailyone"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="Half Day"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp" />
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_Dailytwo"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="Full Day"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"></com.driveway.Component.TTextView>
+
+                </LinearLayout>
+                <com.driveway.Component.EEditText
+                    android:singleLine="true"
+                    android:textCursorDrawable="@color/white"
+                    android:imeOptions="actionDone"
+                    android:id="@+id/edtDailyPrice"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:hint="Enter Price"
+                    android:digits="0123456789"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"
+                    android:drawablePadding="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:drawableLeft="@drawable/drawable_arrow_dollar"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/border_button_with_fill"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"></com.driveway.Component.EEditText>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.TTextView
+            android:text="Weekly"
+            android:gravity="center|left"
+            android:layout_weight="0.7"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+
+        </com.driveway.Component.TTextView>
+        <LinearLayout
+            android:background="@drawable/rounded_border_stay_background"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.driveway.Component.TTextView
+                android:id="@+id/WeeklyPrice"
+                android:background="@drawable/border_button_with_fill_fragment_three_watch"
+                android:textColor="#726D6D"
+                android:textSize="@dimen/_12ssp"
+                android:paddingRight="@dimen/_7sdp"
+                android:drawableRight="@drawable/drawable_arrow_down"
+                android:text="Select Price"
+                android:paddingLeft="@dimen/_10sdp"
+                android:gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"></com.driveway.Component.TTextView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llWeeklyPrice"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_Weeklyone"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="3 Days"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp" />
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_Weeklytwo"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="5 Days"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"></com.driveway.Component.TTextView>
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_Weeklythree"
+                        android:gravity="center"
+                        android:ellipsize="marquee"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="7 Days"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"></com.driveway.Component.TTextView>
+
+                </LinearLayout>
+                <com.driveway.Component.EEditText
+                    android:textCursorDrawable="@color/white"
+                    android:id="@+id/edtWeeklyPrice"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:hint="Enter Price"
+                    android:digits="0123456789"
+                    android:singleLine="true"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"
+                    android:drawablePadding="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:drawableLeft="@drawable/drawable_arrow_dollar"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/border_button_with_fill"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"></com.driveway.Component.EEditText>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.driveway.Component.TTextView
+            android:text="Monthly"
+            android:gravity="center|left"
+            android:layout_weight="0.7"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+
+        </com.driveway.Component.TTextView>
+        <LinearLayout
+            android:background="@drawable/rounded_border_stay_background"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.driveway.Component.TTextView
+                android:id="@+id/MonthlyPrice"
+                android:background="@drawable/border_button_with_fill_fragment_three_watch"
+                android:textColor="#726D6D"
+                android:textSize="@dimen/_12ssp"
+                android:paddingRight="@dimen/_7sdp"
+                android:drawableRight="@drawable/drawable_arrow_down"
+                android:text="Select Price"
+                android:paddingLeft="@dimen/_10sdp"
+                android:gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"></com.driveway.Component.TTextView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llMonthlyPrice"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_Monthlyone"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="14 Days"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp" />
+                    <com.driveway.Component.TTextView
+                        android:id="@+id/tv_Monthlytwo"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="30 Days"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/owner_fragment_four_font_color"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"></com.driveway.Component.TTextView>
+
+                </LinearLayout>
+                <com.driveway.Component.EEditText
+                    android:textCursorDrawable="@color/white"
+                    android:id="@+id/edtMonthlyPrice"
+                    android:inputType="number"
+                    android:hint="Enter Price"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:digits="0123456789"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"
+                    android:drawablePadding="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:drawableLeft="@drawable/drawable_arrow_dollar"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/border_button_with_fill"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"></com.driveway.Component.EEditText>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.driveway.Component.TTextView
+        android:id="@+id/btnSave"
+        android:gravity="center"
+        android:text="SAVE NOW"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/rounded_border"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
